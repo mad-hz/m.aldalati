@@ -1,0 +1,37 @@
+<template>
+    <div class="max-w-3xl px-4 pt-6 lg:pt-10 pb-12 sm:px-6 lg:px-8 mx-auto">
+        <div class="max-w-2xl">
+            <div class="space-y-5 md:space-y-8">
+                <div class="space-y-3">
+                    <h2 class="text-2xl font-bold md:text-3xl">First Feedback</h2>
+
+                    <p class="text-lg text-gray-800">After completing the SKC assignment, I received feedback
+                        highlighting my interest in cybersecurity. The program offers basic coverage, but diving deeper
+                        will require self-initiative through projects or self-study. This motivated me to explore more
+                        on my own.
+                    </p>
+                </div>
+
+                <figure>
+                    <img class="w-full object-cover rounded-xl" src="~/assets/images/blog/feedback.png"
+                        alt="Feedback">
+                    <figcaption class="mt-3 text-sm text-center text-gray-500 dark:text-neutral-500">
+                    </figcaption>
+                </figure>
+
+                <p class="text-lg text-gray-800">The feedback also acknowledged my experience with Laravel, which aligns
+                    with the program's framework in the second semester. It reassured me that I'm on the right track but
+                    also emphasized the need for continuous learning and adaptation.
+                </p>
+            </div>
+        </div>
+    </div>
+</template>
+
+<script setup>
+const config = useRuntimeConfig()
+
+useHead({
+    title: `Feedback - ${config.public.appName}`
+})
+</script>

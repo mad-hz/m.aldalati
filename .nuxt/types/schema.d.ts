@@ -24,7 +24,7 @@ declare module 'nuxt/schema' {
    },
   }
   interface PublicRuntimeConfig {
-
+   appName: string,
   }
 }
 declare module 'vue' {

@@ -4,8 +4,8 @@
             class="relative max-w-7xl w-full flex flex-wrap md:grid md:grid-cols-12 basis-full items-center px-4 md:px-6 md:px-8 mx-auto">
             <div class="md:col-span-3">
                 <nuxt-link class="flex-none rounded-xl text-xl inline-block font-semibold focus:outline-none focus:opacity-80"
-                    to="#">
-                    Mohamad Aldalati
+                    to="/">
+                    <img class="w-28 h-auto" src="~/assets/images/logo.png" alt="Logo Image">
                 </nuxt-link>
             </div>
 
@@ -49,15 +49,27 @@
                         </nuxt-link>
                     </div>
                     <div>
-                        <nuxt-link to="/features" exact-active-class="border-b-2 border-lime-400"
-                            class="rrelative inline-block text-black focus:outline-none before:absolute before:bottom-0.5 before:start-0 before:-z-[1] before:w-full before:h-1">
-                            Features
+                        <nuxt-link to="/dashboard" exact-active-class="border-b-2 border-lime-400"
+                            class="relative inline-block text-black focus:outline-none before:absolute before:bottom-0.5 before:start-0 before:-z-[1] before:w-full before:h-1">
+                            Dashboard
                         </nuxt-link>
                     </div>
                     <div>
-                        <nuxt-link to="/projects" exact-active-class="border-b-2 border-lime-400"
+                        <nuxt-link to="/profile" exact-active-class="border-b-2 border-lime-400"
                             class="relative inline-block text-black focus:outline-none before:absolute before:bottom-0.5 before:start-0 before:-z-[1] before:w-full before:h-1">
-                            Projects
+                            Profile
+                        </nuxt-link>
+                    </div>
+                    <div>
+                        <nuxt-link to="/faq" exact-active-class="border-b-2 border-lime-400"
+                            class="relative inline-block text-black focus:outline-none before:absolute before:bottom-0.5 before:start-0 before:-z-[1] before:w-full before:h-1">
+                            FAQ
+                        </nuxt-link>
+                    </div>
+                    <div>
+                        <nuxt-link to="/blog" exact-active-class="border-b-2 border-lime-400"
+                            class="relative inline-block text-black focus:outline-none before:absolute before:bottom-0.5 before:start-0 before:-z-[1] before:w-full before:h-1">
+                            Blog
                         </nuxt-link>
                     </div>
                 </div>

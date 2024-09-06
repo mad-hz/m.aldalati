@@ -1,8 +1,9 @@
 <template>
-    <div>
-        <div class="max-w-7xl px-4 lg:px-6 lg:px-8 py-12 lg:py-24 mx-auto">
-            <div class="mb-6 sm:mb-10 max-w-2xl text-center mx-auto">
-                <h2 class="font-medium text-black text-2xl sm:text-4xl">
+    <div class="relative overflow-hidden">
+        <div class="max-w-[85rem] mx-auto px-4 sm:px-6 lg:px-8 py-10">
+            <div class="max-w-2xl text-center mx-auto mb-10">
+                <h2
+                    class="font-medium text-black text-2xl sm:text-4xl bg-clip-text bg-gradient-to-tl from-blue-500 to-lime-400 text-transparent">
                     Contact Me
                 </h2>
             </div>
@@ -11,7 +12,7 @@
                 <div class="aspect-w-16 aspect-h-6 lg:aspect-h-14 overflow-hidden bg-gray-100 rounded-2xl">
                     <img class="group-hover:scale-105 group-focus:scale-105 transition-transform duration-500 ease-in-out object-cover rounded-2xl"
                         src="https://images.unsplash.com/photo-1572021335469-31706a17aaef?q=80&w=560&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                        alt="Contacts Image">
+                        alt="Contact">
                 </div>
 
                 <div class="space-y-8 lg:space-y-16">
@@ -34,7 +35,7 @@
                                         Netherlands
                                     </p>
                                     <address class="mt-1 text-black not-italic">
-                                        Delft<br>
+                                        Rotterdam<br>
                                         Zuid-Holland
                                     </address>
                                 </div>
@@ -104,3 +105,11 @@
         </div>
     </div>
 </template>
+
+<script setup>
+const config = useRuntimeConfig()
+
+useHead({
+    title: `Contact - ${config.public.appName}`
+})
+</script>
