@@ -1,113 +1,232 @@
 <template>
-    <div class="relative overflow-hidden">
-        <div class="max-w-[85rem] mx-auto px-4 sm:px-6 lg:px-8 py-10">
-            <div class="max-w-2xl text-center mx-auto mb-10">
-                <h2
-                    class="block text-3xl font-bold text-gray-800 sm:text-4xl md:text-5xl bg-clip-text bg-gradient-to-tl from-blue-500 to-lime-400 text-transparent">
-                    Dashboard
-                </h2>
-                <p class="mt-1 text-gray-600">Let's dive more into the HBO ICT Program.</p>
-            </div>
-            <div class="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-6">
-                <div v-for="(course, index) in courses" :key="index"
-                    class="p-4 border border-gray-200 rounded-lg flex items-start space-x-4">
-                    <div class="flex items-center">
-                        <input type="checkbox" :id="'course-' + index" v-model="course.selected" @change="updateCredits"
-                            class="hidden" />
-                        <div class="relative w-8 h-8 flex items-center justify-center border-2 border-gray-300 rounded-full cursor-pointer"
-                            :class="{ 'bg-green-500 border-green-500': course.selected }"
-                            @click="course.selected = !course.selected; updateCredits()">
-                            <svg v-if="course.selected" class="w-5 h-5 text-white absolute" fill="none"
-                                stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M5 13l4 4L19 7" />
-                            </svg>
-                        </div>
-                    </div>
-                    <div>
-                        <p class="font-semibold text-sm text-gray-800">
-                            {{ course.name }}
-                        </p>
-                        <p class="mt-1 text-sm text-gray-600">
-                            Course ID: {{ course.id }}<br>
-                            Credits: {{ course.credits }} EC
-                        </p>
+    <div class="max-w-[85rem] p-4 lg:p-8 mx-auto">
+        <div class="bg-white border border-gray-200 rounded-xl shadow-sm overflow-hidden">
+            <table class="min-w-full divide-y divide-gray-200">
+                <thead class="bg-gray-50">
+                    <tr>
+                        <th v-for="header in ['Quarter', 'Course', 'EC\'s', 'Exam', 'Grade']" :key="header"
+                            class="px-6 py-3 text-start text-xs font-semibold uppercase tracking-wide text-gray-800">
+                            {{ header }}
+                        </th>
+                    </tr>
+                </thead>
+                <tbody class="divide-y divide-gray-200">
+                    <template v-for="(quarter, qIndex) in quarters" :key="qIndex">
+                        <template v-for="(course, cIndex) in quarter.courses" :key="`${qIndex}-${cIndex}`">
+                            <tr v-for="(exam, eIndex) in course.exams" :key="`${qIndex}-${cIndex}-${eIndex}`"
+                                class="bg-white hover:bg-gray-50">
+                                <!-- Quarter column (only display once per quarter) -->
+                                <td v-if="cIndex === 0 && eIndex === 0"
+                                    :rowspan="quarter.courses.reduce((sum, c) => sum + c.exams.length, 0)"
+                                    class="px-6 py-4 align-top">
+                                    {{ quarter.number }}
+                                </td>
+
+                                <!-- Course column (only display once per course) -->
+                                <td v-if="eIndex === 0" :rowspan="course.exams.length" class="px-6 py-4 align-top">
+                                    {{ course.name }}
+                                </td>
+
+                                <!-- EC column (only display once per course) -->
+                                <td v-if="eIndex === 0" :rowspan="course.exams.length" class="px-6 py-4 align-top">
+                                    {{ course.ec }}
+                                </td>
+
+                                <td class="px-6 py-4 align-top">
+                                    {{ exam.name }}
+                                </td>
+
+                                <td class="px-6 py-4 align-top">
+                                    <span
+                                        class="py-1 px-1.5 inline-flex items-center gap-x-1 text-xs font-medium bg-gray-100 text-gray-800 rounded-full">
+                                        {{ exam.grade }}
+                                    </span>
+                                </td>
+                            </tr>
+                        </template>
+                    </template>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="bg-blue-100 border border-blue-200 text-gray-800 rounded-lg p-4 mt-8" role="alert" tabindex="-1"
+            aria-labelledby="hs-actions-label">
+            <div class="flex">
+                <div class="shrink-0">
+                    <svg class="shrink-0 size-4 mt-1" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                        viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="10"></circle>
+                        <path d="M12 16v-4"></path>
+                        <path d="M12 8h.01"></path>
+                    </svg>
+                </div>
+                <div class="ms-3">
+                    <h3 id="hs-actions-label" class="font-semibold">
+                        NBSA
+                    </h3>
+                    <div class="mt-2 text-sm text-gray-600">
+                        You must at least get 45 ECs to pass the first year.
                     </div>
                 </div>
             </div>
-            <div class="bg-blue-100 border border-blue-200 text-gray-800 rounded-lg p-4 mt-10" role="alert" tabindex="-1"
-                aria-labelledby="hs-actions-label">
-                <div class="flex">
-                    <div class="shrink-0">
-                        <svg class="shrink-0 size-4 mt-1" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                            stroke-linecap="round" stroke-linejoin="round">
-                            <circle cx="12" cy="12" r="10"></circle>
-                            <path d="M12 16v-4"></path>
-                            <path d="M12 8h.01"></path>
-                        </svg>
-                    </div>
-                    <div class="ms-3">
-                        <h3 id="hs-actions-label" class="font-semibold">
-                            NBSA
-                        </h3>
-                        <div class="mt-2 text-sm text-gray-600">
-                            You need at least 45 ECs to pass the first year, and 60 ECs to not repeat any section.
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="mt-10">
-                <label for="progress-bar" class="block text-md font-medium text-gray-700">Progress:</label>
-                <div class="relative pt-1">
-                    <div class="flex items-center justify-between">
-                        <span class="text-xs font-medium text-gray-600">0</span>
-                        <span class="text-xs font-medium text-gray-600">{{ totalCredits }} credits</span>
-                        <span class="text-xs font-medium text-gray-600">60</span>
-                    </div>
-                    <div class="flex w-full h-4 bg-gray-200 rounded-full overflow-hidden mt-2" role="progressbar"
-                        aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
-                        <div class="flex flex-col justify-center rounded-full overflow-hidden transition duration-500 text-xs text-white text-center whitespace-nowrap"
-                            :class="progressBarClass" :style="{ width: progressBarWidth }"></div>
-                    </div>
-                </div>
-            </div>
+        </div>
+
+        <div class="mt-2 bg-green-100 border text-sm text-green-800 rounded-lg p-4"
+            role="alert" tabindex="-1" aria-labelledby="hs-soft-color-success-label">
+            <span id="hs-soft-color-success-label" class="font-bold">If you have got 60ECs then you may continue to the next year without repeating any exam.</span>
         </div>
     </div>
 </template>
 
 <script setup>
-import { ref, computed } from 'vue';
-
-const courses = ref([
-    { name: 'Program and Career Orientation', id: 'CU75001', credits: 2.5, selected: false },
-    { name: 'Computer Science Basics', id: 'CU75002', credits: 5, selected: false },
-    { name: 'Programming Basics', id: 'CU75003', credits: 5, selected: false },
-    { name: 'Personal Professional Development', id: 'CU75068', credits: 12.5, selected: false },
-    { name: 'Object Oriented Programming', id: 'CU75004', credits: 10, selected: false },
-    { name: 'Business IT Consultancy Basics', id: 'CU75081', credits: 2.5, selected: false },
-    { name: 'Framework Project 1', id: 'CU75011', credits: 10, selected: false },
-    { name: 'Framework Project 2', id: 'CU75080', credits: 10, selected: false },
-    { name: 'Personality', id: 'NA', credits: 2.5, selected: false },
-]);
-
-const totalCredits = computed(() => {
-    return courses.value.reduce((sum, course) => course.selected ? sum + course.credits : sum, 0);
-});
-
-const progressBarWidth = computed(() => {
-    const maxCredits = 60;
-    const width = (totalCredits.value / maxCredits) * 100;
-    return `${Math.min(width, 100)}%`;
-});
-
-const progressBarClass = computed(() => {
-    return totalCredits.value < 45 ? 'bg-red-500' : 'bg-green-500';
-});
-
 const config = useRuntimeConfig()
 
 useHead({
     title: `Dashboard - ${config.public.appName}`
 })
+
+const quarters = [
+    {
+        number: 1,
+        courses: [
+            {
+                name: 'Program- & Career Orientation',
+                ec: 2.5,
+                exams: [
+                    { name: 'Presentation (individual)', grade: 'Pending' }
+                ]
+            },
+            {
+                name: 'Computer Science Basics',
+                ec: 5,
+                exams: [
+                    { name: 'Written knowledge test', grade: 'Pending' },
+                ]
+            },
+            {
+                name: 'Programming Basics',
+                ec: 5,
+                exams: [
+                    { name: 'Case study exam', grade: 'Pending' },
+                ]
+            }
+        ]
+    },
+    {
+        number: 2,
+        courses: [
+            {
+                name: 'Object-Oriented Programming',
+                ec: 10,
+                exams: [
+                    { name: 'Presentation (group)', grade: 'Pending' },
+                    { name: 'Written knowledge test', grade: 'Pending' }
+                ]
+            }
+        ]
+    },
+    {
+        number: '1 and 2',
+        courses: [
+            {
+                name: 'Business IT Consultancy basics',
+                ec: 2.5,
+                exams: [
+                    { name: 'Video', grade: 'Pending' },
+                ]
+            }
+        ]
+    },
+    {
+        number: 3,
+        courses: [
+            {
+                name: 'Framework project 1',
+                ec: 10,
+                exams: [
+                    { name: 'On-site case study exam', grade: 'Pending' },
+                    { name: 'Database exam', grade: 'Pending' },
+                    { name: 'Group presentation on project result', grade: 'Pending' },
+                    { name: 'Group portfolio with individual elements on requirements', grade: 'Pending' },
+
+                ]
+            }
+        ]
+    },
+    {
+        number: 4,
+        courses: [
+            {
+                name: 'Framework Project 2',
+                ec: 10,
+                exams: [
+                    { name: 'Final group delivery', grade: 'Pending' },
+                    { name: 'Individual project assessment', grade: 'Pending' },
+                    { name: 'IT Development portfolio', grade: 'Pending' },
+                ]
+            }
+        ]
+    },
+    {
+        number: 'All blocks',
+        courses: [
+            {
+                name: 'Personal Professional Development Exploration',
+                ec: 12.5,
+                exams: [
+                    { name: 'Criterium focused interview', grade: 'Pending' },
+                ]
+            }
+        ]
+    },
+    {
+        number: 'S1',
+        courses: [
+            {
+                name: ' IT Personality Projectweek 1',
+                ec: 1.25,
+                exams: [
+                    { name: 'Portfolio', grade: 'Pending' },
+                ]
+            }
+        ]
+    },
+    {
+        number: 'S2',
+        courses: [
+            {
+                name: 'IT Personality International week',
+                ec: 1.25,
+                exams: [
+                    { name: 'Portfolio', grade: 'Pending' },
+                ]
+            }
+        ]
+    },
+    {
+        number: 'S1&S2',
+        courses: [
+            {
+                name: 'IT Personality 1',
+                ec: 1.25,
+                exams: [
+                    { name: 'Portfolio', grade: 'Pending' },
+                ]
+            }
+        ]
+    },
+    {
+        number: 'S1&S2',
+        courses: [
+            {
+                name: 'IT Personality 2',
+                ec: 1.25,
+                exams: [
+                    { name: 'Portfolio', grade: 'Pending' },
+                ]
+            }
+        ]
+    },
+]
 </script>

@@ -10,18 +10,18 @@
             </div>
 
             <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
-                <nuxt-link class="group flex flex-col focus:outline-none" to="/blog/blogs/study-choice">
+                <nuxt-link class="group flex flex-col focus:outline-none mt-10" to="/blog/blogs/feedback">
                     <div class="relative pt-[50%] sm:pt-[70%] rounded-xl overflow-hidden">
                         <img class="size-full absolute top-0 start-0 object-cover group-hover:scale-105 group-focus:scale-105 transition-transform duration-500 ease-in-out rounded-xl"
-                            src="~/assets/images/blog/study-choice.png" alt="Study Choice">
+                            src="~/assets/images/blog/feedback.png" alt="SKC Feedback">
                     </div>
 
                     <div class="mt-7">
                         <h3 class="text-xl font-semibold text-gray-800 group-hover:text-gray-600">
-                            Study choice
+                            SKC Feedback
                         </h3>
                         <p class="mt-3 text-gray-800">
-                            I chose the HBO-ICT program because it aligns perfectly with...</p>
+                            After completing the SKC assignment, I received feedback highlighting my...</p>
                         <p
                             class="mt-5 inline-flex items-center gap-x-1 text-sm text-lime-500 decoration-2 group-hover:underline group-focus:underline font-medium">
                             Read more
@@ -34,7 +34,31 @@
                     </div>
                 </nuxt-link>
 
-                <nuxt-link class="group flex flex-col focus:outline-none" to="/blog/blogs/swot">
+                <nuxt-link class="group flex flex-col focus:outline-none mt-10" to="/blog/blogs/profession">
+                    <div class="relative pt-[50%] sm:pt-[70%] rounded-xl overflow-hidden">
+                        <img class="size-full absolute top-0 start-0 object-cover group-hover:scale-105 group-focus:scale-105 transition-transform duration-500 ease-in-out rounded-xl"
+                            src="~/assets/images/blog/profession.png" alt="Profession">
+                    </div>
+
+                    <div class="mt-7">
+                        <h3 class="text-xl font-semibold text-gray-800 group-hover:text-gray-600">
+                            Profession
+                        </h3>
+                        <p class="mt-3 text-gray-800">
+                            ADIB is a leading Islamic bank based in the UAE, offering Sharia-compliant...</p>
+                        <p
+                            class="mt-5 inline-flex items-center gap-x-1 text-sm text-lime-500 decoration-2 group-hover:underline group-focus:underline font-medium">
+                            Read more
+                            <svg class="shrink-0 size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <path d="m9 18 6-6-6-6" />
+                            </svg>
+                        </p>
+                    </div>
+                </nuxt-link>
+
+                <nuxt-link class="group flex flex-col focus:outline-none mt-10" to="/blog/blogs/swot">
                     <div class="relative pt-[50%] sm:pt-[70%] rounded-xl overflow-hidden">
                         <img class="size-full absolute top-0 start-0 object-cover group-hover:scale-105 group-focus:scale-105 transition-transform duration-500 ease-in-out rounded-xl"
                             src="~/assets/images/blog/swot.png" alt="SWOT">
@@ -58,7 +82,7 @@
                     </div>
                 </nuxt-link>
 
-                <nuxt-link class="group flex flex-col focus:outline-none" to="/blog/blogs/programming-experience">
+                <nuxt-link class="group flex flex-col focus:outline-none mt-10" to="/blog/blogs/programming-experience">
                     <div class="relative pt-[50%] sm:pt-[70%] rounded-xl overflow-hidden">
                         <img class="size-full absolute top-0 start-0 object-cover group-hover:scale-105 group-focus:scale-105 transition-transform duration-500 ease-in-out rounded-xl"
                             src="~/assets/images/blog/programming.png" alt="Programming Experience">
@@ -70,30 +94,6 @@
                         </h3>
                         <p class="mt-3 text-gray-800">
                             I've been coding extensively in Laravel, a PHP framework, which has become central to...</p>
-                        <p
-                            class="mt-5 inline-flex items-center gap-x-1 text-sm text-lime-500 decoration-2 group-hover:underline group-focus:underline font-medium">
-                            Read more
-                            <svg class="shrink-0 size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                                stroke-linecap="round" stroke-linejoin="round">
-                                <path d="m9 18 6-6-6-6" />
-                            </svg>
-                        </p>
-                    </div>
-                </nuxt-link>
-
-                <nuxt-link class="group flex flex-col focus:outline-none mt-10" to="/blog/blogs/feedback">
-                    <div class="relative pt-[50%] sm:pt-[70%] rounded-xl overflow-hidden">
-                        <img class="size-full absolute top-0 start-0 object-cover group-hover:scale-105 group-focus:scale-105 transition-transform duration-500 ease-in-out rounded-xl"
-                            src="~/assets/images/blog/feedback.png" alt="SKC Feedback">
-                    </div>
-
-                    <div class="mt-7">
-                        <h3 class="text-xl font-semibold text-gray-800 group-hover:text-gray-600">
-                            SKC Feedback
-                        </h3>
-                        <p class="mt-3 text-gray-800">
-                            After completing the SKC assignment, I received feedback highlighting my...</p>
                         <p
                             class="mt-5 inline-flex items-center gap-x-1 text-sm text-lime-500 decoration-2 group-hover:underline group-focus:underline font-medium">
                             Read more
@@ -130,18 +130,18 @@
                     </div>
                 </nuxt-link>
 
-                <nuxt-link class="group flex flex-col focus:outline-none mt-10" to="/blog/blogs/profession">
+                <nuxt-link class="group flex flex-col focus:outline-none mt-10" to="/blog/blogs/study-choice">
                     <div class="relative pt-[50%] sm:pt-[70%] rounded-xl overflow-hidden">
                         <img class="size-full absolute top-0 start-0 object-cover group-hover:scale-105 group-focus:scale-105 transition-transform duration-500 ease-in-out rounded-xl"
-                            src="~/assets/images/blog/profession.png" alt="Profession">
+                            src="~/assets/images/blog/study-choice.png" alt="Study Choice">
                     </div>
 
                     <div class="mt-7">
                         <h3 class="text-xl font-semibold text-gray-800 group-hover:text-gray-600">
-                            Profession
+                            Study choice
                         </h3>
                         <p class="mt-3 text-gray-800">
-                            The ICT field is vast and ever-evolving, offering a range of career paths from...</p>
+                            I chose the HBO-ICT program because it aligns perfectly with...</p>
                         <p
                             class="mt-5 inline-flex items-center gap-x-1 text-sm text-lime-500 decoration-2 group-hover:underline group-focus:underline font-medium">
                             Read more
