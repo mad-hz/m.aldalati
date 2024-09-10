@@ -1,3 +1,6 @@
+# Portfolio M. Aldalati v1.0
+This website was made for a HZ assignment by myself, a preview of the website could be viewed at: https://hz.madnl.nl
+
 # Nuxt 3 Minimal Starter
 
 Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
