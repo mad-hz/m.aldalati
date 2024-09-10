@@ -590,7 +590,7 @@ const _routes = [
   {
     name: "blog-blogs-feedback",
     path: "/blog/blogs/feedback",
-    component: () => import('./feedback-6rvsJQ_v.mjs').then((m) => m.default || m)
+    component: () => import('./feedback-CNAoSCNn.mjs').then((m) => m.default || m)
   },
   {
     name: "blog-blogs-ict-field-of-work",
@@ -600,27 +600,27 @@ const _routes = [
   {
     name: "blog-blogs-profession",
     path: "/blog/blogs/profession",
-    component: () => import('./profession-edEgKlbG.mjs').then((m) => m.default || m)
+    component: () => import('./profession-DT9-0WE_.mjs').then((m) => m.default || m)
   },
   {
     name: "blog-blogs-programming-experience",
     path: "/blog/blogs/programming-experience",
-    component: () => import('./programming-experience-FX08SFfD.mjs').then((m) => m.default || m)
+    component: () => import('./programming-experience-CboKYtdV.mjs').then((m) => m.default || m)
   },
   {
     name: "blog-blogs-study-choice",
     path: "/blog/blogs/study-choice",
-    component: () => import('./study-choice-CbsZcyuu.mjs').then((m) => m.default || m)
+    component: () => import('./study-choice-CPyhJsOa.mjs').then((m) => m.default || m)
   },
   {
     name: "blog-blogs-swot",
     path: "/blog/blogs/swot",
-    component: () => import('./swot-OeNKFgGh.mjs').then((m) => m.default || m)
+    component: () => import('./swot-CkAq1obu.mjs').then((m) => m.default || m)
   },
   {
     name: "blog",
     path: "/blog",
-    component: () => import('./index-CjIYli1A.mjs').then((m) => m.default || m)
+    component: () => import('./index-CniUsQyl.mjs').then((m) => m.default || m)
   },
   {
     name: "contact",
@@ -630,7 +630,7 @@ const _routes = [
   {
     name: "dashboard",
     path: "/dashboard",
-    component: () => import('./dashboard-DrLX_LmW.mjs').then((m) => m.default || m)
+    component: () => import('./dashboard-Br2lASbJ.mjs').then((m) => m.default || m)
   },
   {
     name: "faq",
@@ -640,7 +640,7 @@ const _routes = [
   {
     name: "index",
     path: "/",
-    component: () => import('./index-Uan46qWg.mjs').then((m) => m.default || m)
+    component: () => import('./index-DQRCyOHM.mjs').then((m) => m.default || m)
   },
   {
     name: "profile",

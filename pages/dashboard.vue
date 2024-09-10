@@ -15,19 +15,16 @@
                         <template v-for="(course, cIndex) in quarter.courses" :key="`${qIndex}-${cIndex}`">
                             <tr v-for="(exam, eIndex) in course.exams" :key="`${qIndex}-${cIndex}-${eIndex}`"
                                 class="bg-white hover:bg-gray-50">
-                                <!-- Quarter column (only display once per quarter) -->
                                 <td v-if="cIndex === 0 && eIndex === 0"
                                     :rowspan="quarter.courses.reduce((sum, c) => sum + c.exams.length, 0)"
                                     class="px-6 py-4 align-top">
                                     {{ quarter.number }}
                                 </td>
 
-                                <!-- Course column (only display once per course) -->
                                 <td v-if="eIndex === 0" :rowspan="course.exams.length" class="px-6 py-4 align-top">
                                     {{ course.name }}
                                 </td>
 
-                                <!-- EC column (only display once per course) -->
                                 <td v-if="eIndex === 0" :rowspan="course.exams.length" class="px-6 py-4 align-top">
                                     {{ course.ec }}
                                 </td>
