@@ -114,7 +114,7 @@
 
                     <div class="mt-7">
                         <h3 class="text-xl font-semibold text-gray-800 group-hover:text-gray-600">
-                            ICT Field of Work
+                            ICT Field of 
                         </h3>
                         <p class="mt-3 text-gray-800">
                             The ICT field is vast and ever-evolving, offering a range of career paths from...</p>
