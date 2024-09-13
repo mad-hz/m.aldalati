@@ -86,11 +86,11 @@
                             </h3>
 
                             <p class="font-semibold text-sm text-gray-800">
-                                Techanical Support
+                                Technical Support at Home
                             </p>
 
                             <p class="mt-1 text-sm text-gray-600">
-                                At student aan huis I was able to expand my knowledge, through solving the following
+                                At studentaanhuis I was able to expand my knowledge, through solving the following
                                 problems:
                             </p>
 
@@ -99,7 +99,7 @@
                                     Email Problems
                                 </li>
                                 <li class="ps-1 text-sm text-gray-600">
-                                    Remove Virsues
+                                    Remove Viruses
                                 </li>
                                 <li class="ps-1 text-sm text-gray-600">
                                     Install softwares
@@ -129,23 +129,23 @@
                             </h3>
 
                             <p class="font-semibold text-sm text-gray-800">
-                                Pizza Delievery & Making
+                                Pizza Delivery & Making
                             </p>
 
                             <p class="mt-1 text-sm text-gray-600">
-                                Dominos is a fun place to work at, where I happened to improve my coomunication skills,
-                                and also my dutch language, I usually do the follwing tasks:
+                                Dominos is a fun place to work at, where I happened to improve my communication skills,
+                                and also my dutch language, I usually do the following tasks:
                             </p>
 
                             <ul class="list-disc ms-6 mt-3 space-y-1.5">
                                 <li class="ps-1 text-sm text-gray-600">
-                                    Delievery
+                                    Delivery
                                 </li>
                                 <li class="ps-1 text-sm text-gray-600">
                                     Answering Calls & Taking orders
                                 </li>
                                 <li class="ps-1 text-sm text-gray-600">
-                                    Making Simple Pizzas & Cutting it Into Slides.
+                                    Making Simple Pizzas & Cutting it Into Slices.
                                 </li>
                             </ul>
                         </div>

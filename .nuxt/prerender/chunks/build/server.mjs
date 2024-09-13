@@ -635,17 +635,17 @@ const _routes = [
   {
     name: "faq",
     path: "/faq",
-    component: () => import('./faq-B0nKPxTQ.mjs').then((m) => m.default || m)
+    component: () => import('./faq-B2tI0oJ6.mjs').then((m) => m.default || m)
   },
   {
     name: "index",
     path: "/",
-    component: () => import('./index-DQRCyOHM.mjs').then((m) => m.default || m)
+    component: () => import('./index-SCCCWNic.mjs').then((m) => m.default || m)
   },
   {
     name: "profile",
     path: "/profile",
-    component: () => import('./profile-C02LY_4h.mjs').then((m) => m.default || m)
+    component: () => import('./profile-C4RwAU96.mjs').then((m) => m.default || m)
   }
 ];
 const _wrapIf = (component, props, slots) => {

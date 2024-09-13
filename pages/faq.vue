@@ -102,7 +102,7 @@
                                 register
                                 for Culuture Event, a sport event or just clothes or
                                 materials on there. You add it to the cart and you pay for it, after that wait until you
-                                recieve a confirmation.</p>
+                                receive a confirmation.</p>
                         </div>
                     </div>
 
