@@ -3,7 +3,7 @@
         <div class="text-center">
             <div class="flex justify-center items-center">
                 <nuxt-link to="/" class="w-4/12 sm:w-2/12 md:w-2/12 lg:w-1/12">
-                    <img src="~/assets/images/logo.png" alt="Logo Image">
+                    <img src="~/assets/images/general/logo.png" alt="Logo Image">
                 </nuxt-link>
             </div>
 

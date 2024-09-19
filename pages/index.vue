@@ -28,9 +28,7 @@
             </div>
 
             <div class="relative ms-4">
-                <img class="w-full rounded-md"
-                    src="https://images.unsplash.com/photo-1665686377065-08ba896d16fd?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=700&h=800&q=80"
-                    alt="Index">
+                <img class="w-full rounded-md" src="~/assets/images/general/pc_foto.png" alt="PC Photo Page">
                 <div
                     class="absolute inset-0 -z-[1] bg-gradient-to-tr from-gray-200 via-white/0 to-white/0 size-full rounded-md mt-4 -mb-4 me-4 -ms-4 lg:mt-6 lg:-mb-6 lg:me-6 lg:-ms-6">
                 </div>
@@ -38,16 +36,16 @@
         </div>
     </div>
 
-    <div class="max-w-3xl px-4 pt-6 lg:pt-10 pb-12 sm:px-6 lg:px-8 mx-auto mt-24">
+    <div class="max-w-3xl px-4 pt-6 lg:pt-10 pb-12 sm:px-6 lg:px-8 mx-auto mt-20">
         <div class="max-w-2xl">
             <div class="space-y-5 md:space-y-8">
                 <div class="space-y-3">
                     <h2 class="text-2xl font-bold md:text-3xl">My vision</h2>
-                    <p class="text-lg text-gray-800">
-                        The HBO-ICT program perfectly matches my passion for technology and problem-solving. It offers a
-                        structured approach to learning that helps me apply theory to real-world challenges,
-                        particularly in web development with Laravel. Security is a key focus for me, as I aim to build
-                        robust and safe applications by mastering essential security practices. </p>
+                    <p class="text-lg text-gray-800">The HBO ICT program almost matches my passion for technolog, it
+                        offeres me an approach which I
+                        could apply to real world challenges, particularly in web development in Laravel. Security is a
+                        key focus for me, as I aim to build my knowledge in that particular field.
+                    </p>
 
                     <figure>
                         <img class="w-full object-cover rounded-xl" src="~/assets/images/blog/ict.png"
@@ -56,17 +54,16 @@
                         </figcaption>
                     </figure>
 
-                    <p>The program also emphasizes collaboration and creative thinking, crucial for success in the
-                        evolving ICT field. Working on group projects has sharpened my communication and problem-solving
-                        skills. By staying updated on security trends and continually learning, I’m excited to
-                        contribute to the ICT community and pursue a career in innovative technology solutions.
-                    </p>
+                    <p class="text-lg text-gray-800">
+                        This program also emphasizes creating thinking for success in ICT field, working on group
+                        projects which will help to improve the communciation and problem solving skills. Further, I am
+                        excited to contribute to the ICT community and build a career for myself.</p>
                 </div>
             </div>
         </div>
     </div>
 
-    <div class="max-w-3xl px-4 pt-6 lg:pt-10 pb-12 sm:px-6 lg:px-8 mx-auto mt-24">
+    <div class="max-w-3xl px-4 pt-6 lg:pt-10 pb-12 sm:px-6 lg:px-8 mx-auto mt-10">
         <div class="max-w-2xl">
             <div class="space-y-5 md:space-y-8">
                 <div class="space-y-3">
@@ -203,7 +200,7 @@
     </div>
 
 
-    <div class="max-w-3xl px-4 pt-6 lg:pt-10 pb-12 sm:px-6 lg:px-8 mx-auto mt-24">
+    <div class="max-w-3xl px-4 pt-6 lg:pt-10 pb-12 sm:px-6 lg:px-8 mx-auto mt-10">
         <div class="max-w-2xl">
             <div class="space-y-5 md:space-y-8">
                 <div class="space-y-3">
@@ -253,7 +250,7 @@
         </div>
     </div>
 
-    <div class="relative max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto mt-24">
+    <div class="relative max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto mt-10">
         <blockquote class="text-center lg:mx-auto lg:w-3/5">
             <nuxt-link to="https://italparts.coffee" target="_blank"><img class="mx-auto w-20 h-auto sm:w-28 "
                     src="~/assets/images/references/italparts.png" alt="Italparts"></nuxt-link>

@@ -29,24 +29,12 @@
             <div class="space-y-5 md:space-y-8">
                 <div class="space-y-3">
                     <h2 class="text-2xl font-bold md:text-3xl">A little bit about myself</h2>
-                    <p class="text-lg text-gray-800">
-                        Hey there, my name is Mohamad Aldalati. I'm 19 years old from Syria and have been coding for a
-                        while, building a solid foundation in backend development with PHP. While I find backend
-                        development both challenging and rewarding, I'm still in the early stages of my career and
-                        consider myself a junior developer. Currently, I'm expanding my skills and network through the
-                        HZ ICT program. My strengths in planning, leadership, problem-solving, and attention to detail
-                        help me thrive in both individual and team settings. Although my perfectionism can occasionally
-                        slow me down, I am continually working on improving my efficiency.
-                    </p>
-                    <p class="text-lg text-gray-800">
-                        Outside of coding, I have a variety of hobbies that keep me engaged. I love swimming, playing
-                        video games, and occasionally coding for fun. I also work part-time as a pizza guy at Domino's,
-                        which presents its own set of challenges, especially with balancing my long commute and my
-                        studies. Additionally, I work at Studentaanhuis, where I help people, often older individuals,
-                        with their computers by solving issues like email problems, viruses, and general technical
-                        support. After completing this program, I aim to pursue a career as a security or software
-                        engineer.
-                    </p>
+                    <p class="text-lg text-gray-800">Hello there, my name is Mohamad, you could call me Mo. I am 19 years old from Syria and have been
+                        coding for a short time period, building a solid foundation in back end development. While I
+                        find that challenging, I'm still in my early career stages, and consider myself as a newbie.
+                        Currently, I am expanding my network and skills through the ICT program at the HZ. I like to
+                        take control, lead the team and help them to solve the problem, which I consider as my
+                        strenghts. Nor less, my perfectionism can slow me down, I am still trying to improve.</p>
 
                     <ul class="mt-5 flex flex-col gap-y-3">
                         <li class="flex items-center gap-x-2.5">

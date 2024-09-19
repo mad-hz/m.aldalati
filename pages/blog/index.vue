@@ -21,7 +21,9 @@
                             SKC Feedback
                         </h3>
                         <p class="mt-3 text-gray-800">
-                            After completing the SKC assignment, I received feedback highlighting my...</p>
+                            After completing the SKC assigment, I recieved a feedback about my question where I happened
+                            to...
+                        </p>
                         <p
                             class="mt-5 inline-flex items-center gap-x-1 text-sm text-lime-500 decoration-2 group-hover:underline group-focus:underline font-medium">
                             Read more
@@ -45,7 +47,9 @@
                             Profession
                         </h3>
                         <p class="mt-3 text-gray-800">
-                            ADIB is a leading Islamic bank based in the UAE, offering Sharia-compliant...</p>
+                            ADIB is an Islamic bank based in the UAE,
+                            offering financial services including retail,
+                            corporate, and...</p>
                         <p
                             class="mt-5 inline-flex items-center gap-x-1 text-sm text-lime-500 decoration-2 group-hover:underline group-focus:underline font-medium">
                             Read more
@@ -69,7 +73,8 @@
                             Personal SWOT Analysis
                         </h3>
                         <p class="mt-3 text-gray-800">
-                            Reflecting on my SWOT analysis, I identify key strengths in planning...</p>
+                            Looking at my SWOT analysis, I identified that my strenghts are in planning, leadership
+                            and...</p>
                         <p
                             class="mt-5 inline-flex items-center gap-x-1 text-sm text-lime-500 decoration-2 group-hover:underline group-focus:underline font-medium">
                             Read more
@@ -93,7 +98,8 @@
                             Programming Experience
                         </h3>
                         <p class="mt-3 text-gray-800">
-                            I've been coding extensively in Laravel, a PHP framework, which has become central to...</p>
+                            I have been coding most of the time in Laravel, which is a PHP framework. It bacame the
+                            central...</p>
                         <p
                             class="mt-5 inline-flex items-center gap-x-1 text-sm text-lime-500 decoration-2 group-hover:underline group-focus:underline font-medium">
                             Read more
@@ -114,10 +120,12 @@
 
                     <div class="mt-7">
                         <h3 class="text-xl font-semibold text-gray-800 group-hover:text-gray-600">
-                            ICT Field of 
+                            ICT Field of Work
                         </h3>
                         <p class="mt-3 text-gray-800">
-                            The ICT field is vast and ever-evolving, offering a range of career paths from...</p>
+                            The ICT field, as we know it today, is still involving, offering a range of different
+                            career...
+                        </p>
                         <p
                             class="mt-5 inline-flex items-center gap-x-1 text-sm text-lime-500 decoration-2 group-hover:underline group-focus:underline font-medium">
                             Read more
@@ -141,7 +149,8 @@
                             Study choice
                         </h3>
                         <p class="mt-3 text-gray-800">
-                            I chose the HBO-ICT program because it aligns perfectly with...</p>
+                            I chose the HBO-ICT program because it almost aligns with my passion. I am particularly
+                            interested in...</p>
                         <p
                             class="mt-5 inline-flex items-center gap-x-1 text-sm text-lime-500 decoration-2 group-hover:underline group-focus:underline font-medium">
                             Read more

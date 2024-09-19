@@ -1,82 +1,77 @@
 <template>
-    <div class="max-w-[85rem] p-4 lg:p-8 mx-auto">
-        <div class="bg-white border border-gray-200 rounded-xl shadow-sm overflow-hidden">
-            <table class="min-w-full divide-y divide-gray-200">
-                <thead class="bg-gray-50">
-                    <tr>
-                        <th v-for="header in ['Quarter', 'Course', 'EC\'s', 'Exam', 'Grade']" :key="header"
-                            class="px-6 py-3 text-start text-xs font-semibold uppercase tracking-wide text-gray-800">
-                            {{ header }}
-                        </th>
-                    </tr>
-                </thead>
-                <tbody class="divide-y divide-gray-200">
-                    <template v-for="(quarter, qIndex) in quarters" :key="qIndex">
-                        <template v-for="(course, cIndex) in quarter.courses" :key="`${qIndex}-${cIndex}`">
-                            <tr v-for="(exam, eIndex) in course.exams" :key="`${qIndex}-${cIndex}-${eIndex}`"
-                                class="bg-white hover:bg-gray-50">
-                                <td v-if="cIndex === 0 && eIndex === 0"
-                                    :rowspan="quarter.courses.reduce((sum, c) => sum + c.exams.length, 0)"
-                                    class="px-6 py-4 align-top">
-                                    {{ quarter.number }}
-                                </td>
-
-                                <td v-if="eIndex === 0" :rowspan="course.exams.length" class="px-6 py-4 align-top">
-                                    {{ course.name }}
-                                </td>
-
-                                <td v-if="eIndex === 0" :rowspan="course.exams.length" class="px-6 py-4 align-top">
-                                    {{ course.ec }}
-                                </td>
-
-                                <td class="px-6 py-4 align-top">
-                                    {{ exam.name }}
-                                </td>
-
-                                <td class="px-6 py-4 align-top">
-                                    <span
-                                        class="py-1 px-1.5 inline-flex items-center gap-x-1 text-xs font-medium bg-gray-100 text-gray-800 rounded-full">
-                                        {{ exam.grade }}
-                                    </span>
-                                </td>
-                            </tr>
-                        </template>
-                    </template>
-                </tbody>
-            </table>
-        </div>
-
-        <div class="bg-blue-100 border border-blue-200 text-gray-800 rounded-lg p-4 mt-8" role="alert" tabindex="-1"
-            aria-labelledby="hs-actions-label">
-            <div class="flex">
-                <div class="shrink-0">
-                    <svg class="shrink-0 size-4 mt-1" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                        viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                        stroke-linejoin="round">
-                        <circle cx="12" cy="12" r="10"></circle>
-                        <path d="M12 16v-4"></path>
-                        <path d="M12 8h.01"></path>
-                    </svg>
-                </div>
-                <div class="ms-3">
-                    <h3 id="hs-actions-label" class="font-semibold">
-                        NBSA
-                    </h3>
-                    <div class="mt-2 text-sm text-gray-600">
-                        You must at least get 45 ECs to pass the first year.
+    <div class="relative overflow-hidden">
+        <div class="max-w-[85rem] mx-auto px-4 sm:px-6 lg:px-8 py-10">
+            <div class="max-w-2xl text-center mx-auto mb-10">
+                <h2
+                    class="block text-3xl font-bold text-gray-800 sm:text-4xl md:text-5xl bg-clip-text bg-gradient-to-tl from-blue-500 to-lime-400 text-transparent">
+                    Dashboard
+                </h2>
+                <p class="mt-1 text-gray-600">Let's dive more into the HBO ICT Program.</p>
+            </div>
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6">
+                <div v-for="(course, index) in courses" :key="index" class="p-4 border border-gray-200 rounded-lg">
+                    <div class="flex items-center mb-4">
+                        <input type="checkbox" v-model="course.selected"
+                            class="relative appearance-none w-[3.25rem] h-7 bg-gray-300 rounded-full cursor-pointer transition duration-200 ease-in-out focus:outline-none focus:ring-2 focus:ring-green-600 checked:bg-green-500
+                  before:content-[''] before:absolute before:top-0.5 before:left-0.5 before:w-6 before:h-6 before:bg-white before:rounded-full before:shadow-md before:transition-transform before:duration-200 checked:before:translate-x-[1.55rem]" />
+                    </div>
+                    <div>
+                        <p class="font-semibold text-sm text-gray-800">{{ course.name }}</p>
+                        <p class="mt-1 text-sm text-gray-600">
+                            Quarter: {{ course.quarter }}<br>
+                            Credits: {{ course.credits }} EC
+                        </p>
+                        <ul class="mt-2">
+                            <li v-for="(exam, examIndex) in course.exams" :key="examIndex" class="text-sm">
+                                {{ exam.name }}
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </div>
-        </div>
-
-        <div class="mt-2 bg-green-100 border text-sm text-green-800 rounded-lg p-4"
-            role="alert" tabindex="-1" aria-labelledby="hs-soft-color-success-label">
-            <span id="hs-soft-color-success-label" class="font-bold">If you have got 60ECs then you may continue to the next year without repeating any exam.</span>
+            <div class="bg-blue-100 border border-blue-200 text-gray-800 rounded-lg p-4 mt-5" role="alert" tabindex="-1"
+                aria-labelledby="hs-actions-label">
+                <div class="flex">
+                    <div class="shrink-0">
+                        <svg class="shrink-0 size-4 mt-1" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="12" cy="12" r="10"></circle>
+                            <path d="M12 16v-4"></path>
+                            <path d="M12 8h.01"></path>
+                        </svg>
+                    </div>
+                    <div class="ms-3">
+                        <h3 id="hs-actions-label" class="font-semibold">
+                            NBSA Boundry
+                        </h3>
+                        <div class="mt-2 text-sm text-gray-600">
+                            To be able to continue to the next year, you need at least 45 ECs.
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-4">
+                <label for="progress-bar" class="block text-sm font-medium text-gray-700">Progress:</label>
+                <div class="relative pt-1">
+                    <div class="flex items-center justify-between">
+                        <span class="text-xs font-medium text-gray-600">0</span>
+                        <span class="text-xs font-medium text-gray-600">{{ totalCredits }} / total credits</span>
+                        <span class="text-xs font-medium text-gray-600">60</span>
+                    </div>
+                    <div class="flex w-full h-4 bg-gray-200 rounded-full overflow-hidden mt-2">
+                        <div class="flex flex-col justify-center rounded-full transition duration-500 text-xs text-white text-center"
+                            :class="progressBarClass" :style="{ width: progressBarWidth }"></div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </template>
 
 <script setup>
+import { ref, computed } from 'vue'
+
 const config = useRuntimeConfig()
 
 useHead({
@@ -142,10 +137,10 @@ const quarters = [
                 name: 'Framework project 1',
                 ec: 10,
                 exams: [
-                    { name: 'On-site case study exam', grade: 'Pending' },
+                    { name: 'Case study exam', grade: 'Pending' },
                     { name: 'Database exam', grade: 'Pending' },
-                    { name: 'Group presentation on project result', grade: 'Pending' },
-                    { name: 'Group portfolio with individual elements on requirements', grade: 'Pending' },
+                    { name: 'Group presentation', grade: 'Pending' },
+                    { name: 'Group portfolio', grade: 'Pending' },
 
                 ]
             }
@@ -178,30 +173,6 @@ const quarters = [
         ]
     },
     {
-        number: 'S1',
-        courses: [
-            {
-                name: ' IT Personality Projectweek 1',
-                ec: 1.25,
-                exams: [
-                    { name: 'Portfolio', grade: 'Pending' },
-                ]
-            }
-        ]
-    },
-    {
-        number: 'S2',
-        courses: [
-            {
-                name: 'IT Personality International week',
-                ec: 1.25,
-                exams: [
-                    { name: 'Portfolio', grade: 'Pending' },
-                ]
-            }
-        ]
-    },
-    {
         number: 'S1&S2',
         courses: [
             {
@@ -226,4 +197,33 @@ const quarters = [
         ]
     },
 ]
+
+const courses = ref(
+    quarters.flatMap((quarter) =>
+        quarter.courses.map((course) => ({
+            name: course.name,
+            credits: course.ec,
+            selected: false,
+            exams: course.exams,
+            quarter: `${quarter.number}`,
+        }))
+    )
+)
+
+const totalCredits = computed(() => {
+    return courses.value.reduce(
+        (sum, course) => (course.selected ? sum + course.credits : sum),
+        0
+    )
+})
+
+const progressBarWidth = computed(() => {
+    const maxCredits = 60;
+    const width = (totalCredits.value / maxCredits) * 100;
+    return `${Math.min(width, 100)}%`;
+})
+
+const progressBarClass = computed(() => {
+    return totalCredits.value < 45 ? 'bg-red-500' : 'bg-green-500'
+})
 </script>

@@ -590,37 +590,37 @@ const _routes = [
   {
     name: "blog-blogs-feedback",
     path: "/blog/blogs/feedback",
-    component: () => import('./feedback-CNAoSCNn.mjs').then((m) => m.default || m)
+    component: () => import('./feedback-Dad6YJQ8.mjs').then((m) => m.default || m)
   },
   {
     name: "blog-blogs-ict-field-of-work",
     path: "/blog/blogs/ict-field-of-work",
-    component: () => import('./ict-field-of-work-CdUutwVF.mjs').then((m) => m.default || m)
+    component: () => import('./ict-field-of-work-jEMG4NXz.mjs').then((m) => m.default || m)
   },
   {
     name: "blog-blogs-profession",
     path: "/blog/blogs/profession",
-    component: () => import('./profession-DT9-0WE_.mjs').then((m) => m.default || m)
+    component: () => import('./profession-C0ALzGuc.mjs').then((m) => m.default || m)
   },
   {
     name: "blog-blogs-programming-experience",
     path: "/blog/blogs/programming-experience",
-    component: () => import('./programming-experience-CboKYtdV.mjs').then((m) => m.default || m)
+    component: () => import('./programming-experience-DRVPBjkk.mjs').then((m) => m.default || m)
   },
   {
     name: "blog-blogs-study-choice",
     path: "/blog/blogs/study-choice",
-    component: () => import('./study-choice-CPyhJsOa.mjs').then((m) => m.default || m)
+    component: () => import('./study-choice-CU8S9J3X.mjs').then((m) => m.default || m)
   },
   {
     name: "blog-blogs-swot",
     path: "/blog/blogs/swot",
-    component: () => import('./swot-CkAq1obu.mjs').then((m) => m.default || m)
+    component: () => import('./swot-Dr-Cz9iI.mjs').then((m) => m.default || m)
   },
   {
     name: "blog",
     path: "/blog",
-    component: () => import('./index-CniUsQyl.mjs').then((m) => m.default || m)
+    component: () => import('./index-Dt6GYfiK.mjs').then((m) => m.default || m)
   },
   {
     name: "contact",
@@ -630,7 +630,7 @@ const _routes = [
   {
     name: "dashboard",
     path: "/dashboard",
-    component: () => import('./dashboard-Br2lASbJ.mjs').then((m) => m.default || m)
+    component: () => import('./dashboard-B2kGg60K.mjs').then((m) => m.default || m)
   },
   {
     name: "faq",
@@ -640,12 +640,12 @@ const _routes = [
   {
     name: "index",
     path: "/",
-    component: () => import('./index-SCCCWNic.mjs').then((m) => m.default || m)
+    component: () => import('./index-BWLX7cyu.mjs').then((m) => m.default || m)
   },
   {
     name: "profile",
     path: "/profile",
-    component: () => import('./profile-C4RwAU96.mjs').then((m) => m.default || m)
+    component: () => import('./profile-DQqj7Pg9.mjs').then((m) => m.default || m)
   }
 ];
 const _wrapIf = (component, props, slots) => {

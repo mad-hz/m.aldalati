@@ -5,7 +5,7 @@
             <div class="md:col-span-3">
                 <nuxt-link class="flex-none rounded-xl text-xl inline-block font-semibold focus:outline-none focus:opacity-80"
                     to="/">
-                    <img class="w-28 h-auto" src="~/assets/images/logo.png" alt="Logo Image">
+                    <img class="w-28 h-auto" src="~/assets/images/general/logo.png" alt="Logo Image">
                 </nuxt-link>
             </div>
 

@@ -103,7 +103,7 @@ const unheadPlugins = true ? [CapoPlugin({ track: true })] : [];
 
 const renderSSRHeadOptions = {"omitLineBreaks":false};
 
-const appHead = {"meta":[{"charset":"utf-8"},{"name":"viewport","content":"width=device-width, initial-scale=1"},{"name":"description","content":"A portfolio site about me, made for an assignment."}],"link":[],"style":[],"script":[{"src":"https://player.vimeo.com/api/player.js"}],"noscript":[]};
+const appHead = {"meta":[{"charset":"utf-8"},{"name":"viewport","content":"width=device-width, initial-scale=1"},{"name":"author","content":"MAD"},{"name":"description","content":"A portfolio site about me, made for an assignment."}],"link":[],"style":[],"script":[{"src":"https://player.vimeo.com/api/player.js"}],"noscript":[]};
 
 const appRootTag = "div";
 
