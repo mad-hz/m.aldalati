@@ -7,12 +7,12 @@
     "module": true,
     "resourceType": "script"
   },
-  "/Users/mad/Desktop/HZ/Assignments/preparation-assignment/node_modules/nuxt/dist/app/entry.js": {
+  "/Users/mad/Desktop/HZ/PCO/Assignments/preparation-assignment/node_modules/nuxt/dist/app/entry.js": {
     "resourceType": "script",
     "module": true,
     "prefetch": true,
     "preload": true,
     "isEntry": true,
-    "file": "/Users/mad/Desktop/HZ/Assignments/preparation-assignment/node_modules/nuxt/dist/app/entry.js"
+    "file": "/Users/mad/Desktop/HZ/PCO/Assignments/preparation-assignment/node_modules/nuxt/dist/app/entry.js"
   }
 }

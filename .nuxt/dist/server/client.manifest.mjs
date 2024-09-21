@@ -1,1 +1,1 @@
-export { default } from "file:///Users/mad/Desktop/HZ/Assignments/preparation-assignment/node_modules/@nuxt/vite-builder/dist/runtime/client.manifest.mjs"
+export { default } from "file:///Users/mad/Desktop/HZ/PCO/Assignments/preparation-assignment/node_modules/@nuxt/vite-builder/dist/runtime/client.manifest.mjs"

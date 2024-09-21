@@ -2,14 +2,8 @@
     <div class="max-w-3xl px-4 pt-6 lg:pt-10 pb-12 sm:px-6 lg:px-8 mx-auto">
         <div class="max-w-2xl">
             <div class="space-y-5 md:space-y-8">
-                <nuxt-link class="inline-flex items-center gap-x-1 text-sm text-black" to="/blog">
-                    <svg class="shrink-0 size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                        viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                        stroke-linejoin="round">
-                        <path d="m15 18-6-6 6-6" />
-                    </svg>
-                    Back to blogs
-                </nuxt-link>
+                <BackButton />
+
                 <div class="space-y-3">
                     <h2 class="text-2xl font-bold md:text-3xl">First Feedback</h2>
 
@@ -50,12 +44,17 @@
                         </svg>
                     </button>
                 </nav>
+
+                <PaginationNav previousLink="profession" />
             </div>
         </div>
     </div>
 </template>
 
 <script setup>
+import PaginationNav from '~/components/PaginationNav'
+import BackButton from '~/components/BackButton'
+
 const config = useRuntimeConfig()
 
 useHead({
