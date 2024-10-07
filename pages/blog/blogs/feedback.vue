@@ -16,7 +16,7 @@
                 </div>
 
                 <figure>
-                    <img class="w-full object-cover rounded-xl" src="~/assets/images/blog/feedback.png" alt="Feedback">
+                    <img class="w-full object-cover rounded-xl" src="/images/blog/feedback.png" alt="Feedback">
                     <figcaption class="mt-3 text-sm text-center text-gray-500 dark:text-neutral-500">
                     </figcaption>
                 </figure>

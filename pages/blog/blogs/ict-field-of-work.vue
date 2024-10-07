@@ -17,7 +17,7 @@
                 </div>
 
                 <figure>
-                    <img class="w-full object-cover rounded-xl" src="~/assets/images/blog/ict.png"
+                    <img class="w-full object-cover rounded-xl" src="/images/blog/ict.png"
                         alt="ICT Field of Work">
                     <figcaption class="mt-3 text-sm text-center text-gray-500 dark:text-neutral-500">
                     </figcaption>

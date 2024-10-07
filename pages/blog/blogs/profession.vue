@@ -44,7 +44,7 @@
                 </div>
 
                 <figure>
-                    <img class="w-full object-cover rounded-xl" src="~/assets/images/blog/profession.png"
+                    <img class="w-full object-cover rounded-xl" src="/images/blog/profession.png"
                         alt="Programming Experience">
                     <figcaption class="mt-3 text-sm text-center text-gray-500 dark:text-neutral-500">
                     </figcaption>
@@ -81,7 +81,7 @@
                 </p>
 
                 <figure>
-                    <img class="w-full object-cover rounded-xl" src="~/assets/images/blog/meta.png"
+                    <img class="w-full object-cover rounded-xl" src="/images/blog/meta.png"
                         alt="Programming Experience">
                     <figcaption class="mt-3 text-sm text-center text-gray-500 dark:text-neutral-500">
                     </figcaption>

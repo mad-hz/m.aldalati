@@ -620,7 +620,7 @@ const _routes = [
   {
     name: "blog",
     path: "/blog",
-    component: () => import('./index-BARO6GBO.mjs').then((m) => m.default || m)
+    component: () => import('./index-Drksj7Ab.mjs').then((m) => m.default || m)
   },
   {
     name: "contact",

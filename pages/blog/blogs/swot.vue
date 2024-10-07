@@ -17,7 +17,7 @@
                 </div>
 
                 <figure>
-                    <img class="w-full object-cover rounded-xl" src="~/assets/images/blog/swot.png" alt="SWOT">
+                    <img class="w-full object-cover rounded-xl" src="/images/blog/swot.png" alt="SWOT">
                     <figcaption class="mt-3 text-sm text-center text-gray-500 dark:text-neutral-500">
                     </figcaption>
                 </figure>

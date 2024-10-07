@@ -2,7 +2,7 @@
     <!-- Blog Card -->
     <nuxt-link :to="blog.link" class="group flex flex-col focus:outline-none mt-10">
         <div class="relative pt-[50%] sm:pt-[70%] rounded-xl overflow-hidden">
-            <img :src="blog.image" :alt="blog.title"
+            <img :src='blog.image' :alt="blog.title"
                 class="size-full absolute top-0 start-0 object-cover group-hover:scale-105 group-focus:scale-105 transition-transform duration-500 ease-in-out rounded-xl" />
         </div>
 
@@ -32,10 +32,10 @@
 </template>
 
 <script setup>
-defineProps({
-    blog: {
-        type: Object,
-        required: true
-    }
+const props = defineProps({
+  blog: {
+    type: Object,
+    required: true
+  }
 })
 </script>
