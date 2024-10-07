@@ -1,5 +1,6 @@
 <template>
     <nav class="flex justify-between items-center gap-x-1" aria-label="Pagination">
+        <!-- Previous Link -->
         <nuxt-link :to="previousLink"
             class="min-h-[38px] min-w-[38px] py-2 px-2.5 inline-flex justify-center items-center gap-x-2 text-sm rounded-lg text-gray-800 hover:bg-gray-100 focus:outline-none focus:bg-gray-100"
             aria-label="Previous">
@@ -9,6 +10,8 @@
             </svg>
             <span aria-hidden="true" class="hidden sm:block">Previous</span>
         </nuxt-link>
+
+        <!-- Next Link -->
         <nuxt-link :to="nextLink"
             class="min-h-[38px] min-w-[38px] py-2 px-2.5 inline-flex justify-center items-center gap-x-2 text-sm rounded-lg text-gray-800 hover:bg-gray-100 focus:outline-none focus:bg-gray-100">
             <span aria-hidden="true" class="hidden sm:block">Next</span>

@@ -3,6 +3,7 @@ import type { DefineComponent, SlotsType } from 'vue'
 type IslandComponent<T extends DefineComponent> = T & DefineComponent<{}, {refresh: () => Promise<void>}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, SlotsType<{ fallback: { error: unknown } }>>
 interface _GlobalComponents {
       'BackButton': typeof import("../components/BackButton.vue")['default']
+    'BlogCard': typeof import("../components/BlogCard.vue")['default']
     'Footer': typeof import("../components/Footer.vue")['default']
     'Navbar': typeof import("../components/Navbar.vue")['default']
     'PaginationNav': typeof import("../components/PaginationNav.vue")['default']
@@ -30,6 +31,7 @@ interface _GlobalComponents {
     'NuxtIsland': typeof import("../node_modules/nuxt/dist/app/components/nuxt-island")['default']
     'NuxtRouteAnnouncer': IslandComponent<typeof import("../node_modules/nuxt/dist/app/components/server-placeholder")['default']>
       'LazyBackButton': typeof import("../components/BackButton.vue")['default']
+    'LazyBlogCard': typeof import("../components/BlogCard.vue")['default']
     'LazyFooter': typeof import("../components/Footer.vue")['default']
     'LazyNavbar': typeof import("../components/Navbar.vue")['default']
     'LazyPaginationNav': typeof import("../components/PaginationNav.vue")['default']
@@ -63,6 +65,7 @@ declare module 'vue' {
 }
 
 export const BackButton: typeof import("../components/BackButton.vue")['default']
+export const BlogCard: typeof import("../components/BlogCard.vue")['default']
 export const Footer: typeof import("../components/Footer.vue")['default']
 export const Navbar: typeof import("../components/Navbar.vue")['default']
 export const PaginationNav: typeof import("../components/PaginationNav.vue")['default']
@@ -90,6 +93,7 @@ export const Body: typeof import("../node_modules/nuxt/dist/head/runtime/compone
 export const NuxtIsland: typeof import("../node_modules/nuxt/dist/app/components/nuxt-island")['default']
 export const NuxtRouteAnnouncer: IslandComponent<typeof import("../node_modules/nuxt/dist/app/components/server-placeholder")['default']>
 export const LazyBackButton: typeof import("../components/BackButton.vue")['default']
+export const LazyBlogCard: typeof import("../components/BlogCard.vue")['default']
 export const LazyFooter: typeof import("../components/Footer.vue")['default']
 export const LazyNavbar: typeof import("../components/Navbar.vue")['default']
 export const LazyPaginationNav: typeof import("../components/PaginationNav.vue")['default']

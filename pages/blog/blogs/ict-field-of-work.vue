@@ -2,8 +2,10 @@
     <div class="max-w-3xl px-4 pt-6 lg:pt-10 pb-12 sm:px-6 lg:px-8 mx-auto">
         <div class="max-w-2xl">
             <div class="space-y-5 md:space-y-8">
+                <!-- Back Button -->
                 <BackButton />
 
+                <!-- Content -->
                 <div class="space-y-3">
                     <h2 class="text-2xl font-bold md:text-3xl">ICT Field of Work</h2>
 
@@ -27,6 +29,7 @@
                     everyday there's a new challenge and an opportunity to make an impact.
                 </p>
 
+                <!-- Pagination -->
                 <PaginationNav previousLink="study-choice" nextLink="programming-experience" />
             </div>
         </div>

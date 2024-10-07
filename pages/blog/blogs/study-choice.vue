@@ -2,8 +2,10 @@
     <div class="max-w-3xl px-4 pt-6 lg:pt-10 pb-12 sm:px-6 lg:px-8 mx-auto">
         <div class="max-w-2xl">
             <div class="space-y-5 md:space-y-8">
+                <!-- Back Button -->
                 <BackButton />
 
+                <!-- Content -->
                 <div class="space-y-3">
                     <h2 class="text-2xl font-bold md:text-3xl">Why I chose the HBO-ICT</h2>
 
@@ -26,6 +28,7 @@
                     network with like minded people, and perhaps make an impact together in the ICT industy.
                 </p>
 
+                <!-- Pagination -->
                 <PaginationNav nextLink="ict-field-of-work" />
             </div>
         </div>

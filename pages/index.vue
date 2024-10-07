@@ -1,4 +1,5 @@
 <template>
+    <!-- Header Details -->
     <div class="max-w-[85rem] mx-auto px-4 sm:px-6 lg:px-8">
         <div class="grid md:grid-cols-2 gap-4 md:gap-8 xl:gap-20 md:items-center">
             <div>
@@ -27,6 +28,7 @@
                 </div>
             </div>
 
+            <!-- Header Image -->
             <div class="relative ms-4">
                 <img class="w-full rounded-md" src="~/assets/images/general/pc_foto.png" alt="PC Photo Page">
                 <div
@@ -36,13 +38,14 @@
         </div>
     </div>
 
+    <!-- Vision Details -->
     <div class="max-w-3xl px-4 pt-6 lg:pt-10 pb-12 sm:px-6 lg:px-8 mx-auto mt-20">
         <div class="max-w-2xl">
             <div class="space-y-5 md:space-y-8">
                 <div class="space-y-3">
                     <h2 class="text-2xl font-bold md:text-3xl">My vision</h2>
-                    <p class="text-lg text-gray-800">The HBO ICT program almost matches my passion for technolog, it
-                        offeres me an approach which I
+                    <p class="text-lg text-gray-800">The HBO ICT program almost matches my passion for technology, it
+                        offers me an approach which I
                         could apply to real world challenges, particularly in web development in Laravel. Security is a
                         key focus for me, as I aim to build my knowledge in that particular field.
                     </p>
@@ -63,6 +66,7 @@
         </div>
     </div>
 
+    <!-- Work Experience List -->
     <div class="max-w-3xl px-4 pt-6 lg:pt-10 pb-12 sm:px-6 lg:px-8 mx-auto mt-10">
         <div class="max-w-2xl">
             <div class="space-y-5 md:space-y-8">
@@ -199,7 +203,7 @@
         </div>
     </div>
 
-
+    <!-- HZ Aside Menu Links -->
     <div class="max-w-3xl px-4 pt-6 lg:pt-10 pb-12 sm:px-6 lg:px-8 mx-auto mt-10">
         <div class="max-w-2xl">
             <div class="space-y-5 md:space-y-8">
@@ -250,6 +254,7 @@
         </div>
     </div>
 
+    <!-- Feedback of one of my clients -->
     <div class="relative max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto mt-10">
         <blockquote class="text-center lg:mx-auto lg:w-3/5">
             <nuxt-link to="https://italparts.coffee" target="_blank"><img class="mx-auto w-20 h-auto sm:w-28 "

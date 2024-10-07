@@ -1,6 +1,7 @@
 <template>
     <div class="relative overflow-hidden">
         <div class="max-w-[85rem] mx-auto px-4 sm:px-6 lg:px-8 py-10">
+            <!-- Header Title -->
             <div class="max-w-2xl text-center mx-auto mb-10">
                 <h2
                     class="text-2xl font-bold md:text-4xl md:leading-tight bg-clip-text bg-gradient-to-tl from-blue-500 to-lime-400 text-transparent">
@@ -10,6 +11,7 @@
             </div>
             <div class="max-w-2xl mx-auto">
                 <div class="hs-accordion-group">
+                    <!-- List Through FAQ -->
                     <div class="hs-accordion hs-accordion-active:bg-gray-100 rounded-xl p-6 active"
                         id="hs-basic-with-title-and-arrow-stretched-heading-one">
                         <button

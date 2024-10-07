@@ -1,6 +1,7 @@
 <template>
     <footer class="mt-auto w-full max-w-[85rem] py-10 px-4 sm:px-6 lg:px-8 mx-auto">
         <div class="text-center">
+            <!-- Content -->
             <div class="flex justify-center items-center">
                 <nuxt-link to="/" class="w-4/12 sm:w-2/12 md:w-2/12 lg:w-1/12">
                     <img src="~/assets/images/general/logo.png" alt="Logo Image">
@@ -14,6 +15,7 @@
                         to="https://madnl.nl" target="_blank">MAD NL</nuxt-link>.</p>
             </div>
 
+            <!-- Github -->
             <div class="mt-3 space-x-2">
                 <nuxt-link to="https://github.com/mad-hz" target="_blank"
                     class="size-8 inline-flex justify-center items-center gap-x-2 text-sm font-semibold rounded-full border border-transparent text-gray-500 hover:bg-gray-50 focus:outline-none focus:bg-gray-50 disabled:opacity-50 disabled:pointer-events-none">

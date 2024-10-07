@@ -2,8 +2,10 @@
     <div class="max-w-3xl px-4 pt-6 lg:pt-10 pb-12 sm:px-6 lg:px-8 mx-auto">
         <div class="max-w-2xl">
             <div class="space-y-5 md:space-y-8">
+                <!-- Back Button -->
                 <BackButton />
-                
+
+                <!-- Content -->
                 <div class="space-y-3">
                     <h2 class="text-2xl font-bold md:text-3xl">My Personal SWOT Analysis</h2>
 
@@ -23,6 +25,7 @@
                 <p class="text-lg text-gray-800">On the other hand, my perfectionism, which could help me build clean
                     applications yet it might slow me down.</p>
 
+                <!-- Pagination -->
                 <PaginationNav previousLink="programming-experience" nextLink="profession" />
             </div>
         </div>

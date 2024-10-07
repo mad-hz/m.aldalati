@@ -1,6 +1,7 @@
 <template>
     <div class="relative overflow-hidden">
         <div class="max-w-[85rem] mx-auto px-4 sm:px-6 lg:px-8 py-10">
+            <!-- Header Title -->
             <div class="max-w-2xl text-center mx-auto mb-10">
                 <h2
                     class="font-medium text-black text-2xl sm:text-4xl bg-clip-text bg-gradient-to-tl from-blue-500 to-lime-400 text-transparent">
@@ -16,6 +17,7 @@
                 </div>
 
                 <div class="space-y-8 lg:space-y-16">
+                    <!-- Adress -->
                     <div>
                         <h3 class="mb-5 font-semibold text-black">
                             My address
@@ -49,6 +51,7 @@
                         </h3>
 
                         <div class="grid sm:grid-cols-2 gap-4 sm:gap-6 md:gap-8 lg:gap-12">
+                            <!-- Email Contacts -->
                             <div class="flex gap-4">
                                 <svg class="shrink-0 size-5 text-gray-500" xmlns="http://www.w3.org/2000/svg" width="24"
                                     height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
@@ -78,6 +81,7 @@
                                 </div>
                             </div>
 
+                            <!-- Number Contacts -->
                             <div class="flex gap-4">
                                 <svg class="shrink-0 size-5 text-gray-500" xmlns="http://www.w3.org/2000/svg" width="24"
                                     height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
